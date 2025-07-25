@@ -1,0 +1,214 @@
+.payments {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 4rem;
+
+  @media screen and (max-width: 1200px) {
+    gap: 2rem;
+  }
+
+  @media screen and (max-width: 1100px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, max-content);
+  }
+
+  &__app {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+
+    @media screen and (max-width: 1200px) {
+      gap: 2rem;
+    }
+
+    @media screen and (max-width: 1100px) {
+      grid-column: 1 / -1;
+      grid-row: 2 / 3;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 1fr;
+    }
+
+    @media screen and (max-width: 680px) {
+      grid-template-columns: 1fr;
+      justify-content: center;
+    }
+  }
+}
+
+.app-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 2rem;
+  background-color: #fff;
+  border-radius: 2.5rem;
+  color: #000;
+  text-align: center;
+
+  @media screen and (max-width: 968px) {
+    padding: 4rem 2rem;
+  }
+
+  &__img {
+    margin-bottom: 2.5rem;
+    height: 16rem;
+    max-width: 30rem;
+    object-fit: contain;
+    object-position: center;
+
+    @media screen and (max-width: 968px) {
+      height: 12rem;
+      margin-bottom: 1rem;
+    }
+
+    @media screen and (max-width: 740px) {
+      height: 7rem;
+      margin-bottom: 1rem;
+    }
+
+    @media screen and (max-width: 680px) {
+      height: 15rem;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__title {
+    color: #f3a712;
+    font-size: 3.4rem;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 1rem;
+
+    @media screen and (max-width: 740px) {
+      font-size: 2.4rem;
+    }
+
+    @media screen and (max-width: 680px) {
+      font-size: 4rem;
+    }
+  }
+
+  &__subtitle {
+    color: #210e2b;
+    margin-bottom: 2rem;
+
+    @media screen and (max-width: 680px) {
+      font-size: 2.4rem;
+    }
+  }
+
+  &__read-more {
+    color: #f3a712;
+    text-align: center;
+    font-size: 1.6rem;
+  }
+
+  &__stores {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+
+    img,
+    picture {
+      cursor: pointer;
+    }
+  }
+}
+
+.payments__icons {
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+  margin-bottom: 8rem;
+  width: 100%;
+
+  @media screen and (max-width: 1200px) {
+    margin-bottom: 4rem;
+  }
+}
+
+.payments__icons .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4rem;
+}
+
+.payments__icons .swiper-slide img {
+  max-height: 100%;
+}
+
+.payments__fees {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: max-content 1fr max-content;
+  column-gap: 1.5rem;
+  margin-bottom: 2rem;
+
+  @media screen and (max-width: 1100px) {
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+  }
+
+  @media screen and (max-width: 680px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+
+.payments__fees p {
+  @media screen and (max-width: 680px) {
+  }
+  line-height: 1.5;
+  &:not(:first-of-type) {
+    padding-top: 1.5rem;
+    border-top: 0.2rem solid #f3a712;
+  }
+
+  &:first-of-type {
+    margin-right: 5rem;
+
+    @media screen and (max-width: 968px) {
+      margin-right: 2rem;
+    }
+
+    @media screen and (max-width: 680px) {
+      grid-column: 1 / -1;
+    }
+  }
+
+  span {
+    display: block;
+
+    &:first-of-type {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      font-weight: 700;
+
+      @media screen and (max-width: 680px) {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.payments__icons--safety {
+  grid-column: 1 / -1;
+  padding-top: 3rem;
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  justify-content: flex-end;
+  border-top: 0.2rem solid #f3a712;
+
+  @media screen and (max-width: 1100px) {
+    margin-top: 2rem;
+  }
+
+  img,
+  picture {
+    max-width: 10rem;
+  }
+}

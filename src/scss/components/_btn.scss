@@ -1,0 +1,70 @@
+.btn {
+  display: block;
+  color: #fff;
+  text-align: center;
+  font-weight: 700;
+  border-radius: 9rem;
+  border: 0.6rem solid rgba(255, 255, 255, 0.5);
+  background: #ed0900;
+  background-clip: padding-box;
+  transition: background 0.2s;
+
+  &:hover {
+    background: #ba120c;
+    background-clip: padding-box;
+  }
+
+  &--hero {
+    font-size: 3rem;
+    text-transform: uppercase;
+    max-width: 35rem;
+    margin-bottom: 25rem;
+    padding: 1.5rem 2rem;
+    position: relative;
+    z-index: 5;
+
+    @media screen and (max-width: 1820px) {
+      margin-bottom: 20rem;
+    }
+
+    @media screen and (max-width: 1200px) {
+      max-width: 30rem;
+    }
+    @media screen and (max-width: 968px) {
+      margin-bottom: 15rem;
+    }
+
+    @media screen and (max-width: 680px) {
+      margin: 0 auto 1rem auto;
+      max-width: 35rem;
+      font-size: 2.8rem;
+    }
+  }
+
+  &--promo {
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+    grid-column: 2 / 3;
+
+    @media screen and (max-width: 1080px) {
+      width: 12rem;
+      padding: 0.8rem;
+      align-self: end;
+    }
+
+    @media screen and (max-width: 680px) {
+      grid-column: 1 / -1;
+      padding: 1rem;
+      justify-self: center;
+      max-width: 18rem;
+      width: 90%;
+    }
+
+    @media screen and (max-width: 680px) {
+      grid-column: 2 / 3;
+      width: 25rem;
+      font-size: 2rem;
+    }
+  }
+}

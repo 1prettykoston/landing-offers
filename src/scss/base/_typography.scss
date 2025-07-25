@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+@font-face {
+  font-family: 'TT Firs Neue';
+  font-weight: 400;
+  font-style: normal;
+  src: local('TT Firs Neue'), url('../fonts/TTFirsNeue-Regular.woff2') format('woff2'),
+    url('../fonts/TTFirsNeue-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'TT Firs Neue';
+  font-weight: 500;
+  font-style: normal;
+  src: local('TT Firs Neue'), url('../fonts/TTFirsNeue-Medium.woff2') format('woff2'),
+    url('../fonts/TTFirsNeue-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'TT Firs Neue';
+  font-weight: 700;
+  font-style: normal;
+  src: local('TT Firs Neue'), url('../fonts/TTFirsNeue-Bold.woff2') format('woff2'),
+    url('../fonts/TTFirsNeue-Bold.woff') format('woff');
+}
+
+body {
+  font-family: 'TT Firs Neue', sans-serif;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: normal;
+  cursor: default;
+}
+
+section {
+  h1,
+  h2 {
+    color: #f3a712;
+    font-size: 3.6rem;
+    margin-bottom: 2rem;
+
+    @media screen and (max-width: 680px) {
+      font-size: 3.4rem;
+    }
+  }
+}

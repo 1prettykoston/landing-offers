@@ -1,0 +1,23 @@
+.nav {
+  ul {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+
+    @media screen and (max-width: 1200px) {
+      gap: 2rem;
+    }
+
+    li {
+      color: rgba(255, 255, 255, 0.7);
+      font-weight: 400;
+      font-family: 'Roboto', sans-serif;
+    }
+  }
+}
+
+
+.nav.header__nav .nav__item--active a {
+  border-bottom: 1px solid #F3A712;
+  color: #fff;
+}

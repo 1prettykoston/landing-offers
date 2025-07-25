@@ -1,0 +1,215 @@
+.hero {
+  background: right bottom 4rem / 52rem no-repeat url('./../img/hero/shape-right.png'),
+    right bottom / 105rem no-repeat url('./../img/hero/coins.png'),
+    right 20rem bottom 4.5rem / 75rem no-repeat url('./../img/hero/shape-left.png'),
+    center / cover no-repeat url('./../img/hero/bg-hero.png');
+  padding-top: 1.5rem;
+  position: relative;
+  margin-bottom: 6rem;
+  overflow: hidden;
+  max-width: unset;
+  padding: 0;
+
+  @media screen and (max-width: 1820px) {
+    background: right bottom 4rem / 42rem no-repeat url('./../img/hero/shape-right.png'),
+      right bottom / 90rem no-repeat url('./../img/hero/coins.png'),
+      right 20rem bottom 4.5rem / 55rem no-repeat url('./../img/hero/shape-left.png'),
+      center / cover no-repeat url('./../img/hero/bg-hero.png');
+  }
+
+  @media screen and (max-width: 1440px) {
+    background: right bottom 4rem / 35rem no-repeat url('./../img/hero/shape-right.png'),
+      right bottom / 80rem no-repeat url('./../img/hero/coins.png'),
+      right 20rem bottom 4.5rem / 45rem no-repeat url('./../img/hero/shape-left.png'),
+      center / cover no-repeat url('./../img/hero/bg-hero.png');
+  }
+
+  @media screen and (max-width: 968px) {
+    background: right -5rem bottom 4rem / 25rem no-repeat url('./../img/hero/shape-right.png'),
+      right bottom / 60rem no-repeat url('./../img/hero/coins.png'),
+      right -5rem bottom 4.5rem / 40rem no-repeat url('./../img/hero/shape-left.png'),
+      center / cover no-repeat url('./../img/hero/bg-hero.png');
+    margin-bottom: 3rem;
+  }
+
+  @media screen and (max-width: 520px) {
+    background: right 115% bottom -2rem / 34rem no-repeat url('./../img/hero/shape-right.png'),
+      right bottom / 60rem no-repeat url('./../img/hero/coins.png'),
+      right -17rem bottom 4.5rem / 47rem no-repeat url('./../img/hero/shape-left.png'),
+      center / cover no-repeat url('./../img/hero/bg-hero-mobile.png');
+  }
+
+  &__title {
+    max-width: 180rem;
+    margin: 0 auto 2rem auto;
+    padding: 0 2rem;
+    position: relative;
+    z-index: 10;
+    box-sizing: content-box;
+
+    @media screen and (max-width: 968px) {
+      padding: 0 1rem;
+    }
+
+    @media screen and (max-width: 520px) {
+      margin: 0 auto 1rem auto;
+    }
+
+    hgroup {
+      margin-bottom: 6rem;
+
+      @media screen and (max-width: 680px) {
+        margin-bottom: 20rem;
+      }
+
+      @media screen and (max-width: 520px) {
+        max-width: 35rem;
+      }
+    }
+
+    h1,
+    h2,
+    h3 {
+      line-height: 1;
+    }
+
+    h2,
+    h3 {
+      text-transform: uppercase;
+    }
+
+    h1 {
+      font-size: 4rem;
+      margin-bottom: 4rem;
+      color: #fff;
+
+      @media screen and (max-width: 1820px) {
+        font-size: 3rem;
+      }
+
+      @media screen and (max-width: 1200px) {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+      }
+
+      @media screen and (max-width: 968px) {
+        margin-bottom: 1rem;
+      }
+
+      @media screen and (max-width: 520px) {
+        margin-bottom: 3rem;
+      }
+    }
+
+    h2 {
+      font-size: 8rem;
+      color: #f3a712;
+      margin-bottom: 0;
+
+      @media screen and (max-width: 1820px) {
+        font-size: 6rem;
+      }
+
+      @media screen and (max-width: 1200px) {
+        font-size: 5rem;
+      }
+
+      @media screen and (max-width: 680px) {
+        font-size: 4.2rem;
+      }
+
+      @media screen and (max-width: 520px) {
+        margin-bottom: 1rem;
+      }
+    }
+
+    h3 {
+      color: #ed0900;
+      font-size: 4.8rem;
+
+      @media screen and (max-width: 1200px) {
+        font-size: 3.2rem;
+      }
+
+      @media screen and (max-width: 968px) {
+        font-size: 2.4rem;
+      }
+
+      @media screen and (max-width: 680px) {
+        span {
+          display: block;
+        }
+      }
+    }
+  }
+
+  &__disclaimer {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: #fff;
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    max-width: 73rem;
+    position: relative;
+    z-index: 5;
+
+    @media screen and (max-width: 1100px) {
+    }
+
+    @media screen and (max-width: 968px) {
+      font-size: 1rem;
+    }
+
+    @media screen and (max-width: 520px) {
+      font-size: 1.1rem;
+    }
+  }
+
+  &__icon-eighteen {
+    max-width: 5rem;
+    width: 5rem;
+
+    @media screen and (max-width: 680px) {
+      max-width: 3rem;
+      width: 3rem;
+    }
+
+    @media screen and (max-width: 520px) {
+      max-width: 4rem;
+      width: 4rem;
+    }
+  }
+
+  &__shape {
+    position: absolute;
+    width: 40rem;
+    z-index: 5;
+
+    @media screen and (max-width: 1100px) {
+      width: 30rem;
+    }
+
+    &--left {
+      bottom: 2rem;
+      right: 70%;
+
+      @media screen and (max-width: 680px) {
+        right: unset;
+        bottom: 4rem;
+        z-index: 2;
+        left: -1rem;
+      }
+    }
+
+    &--right {
+      bottom: 6rem;
+      left: 70%;
+
+      @media screen and (max-width: 680px) {
+        left: 42%;
+      }
+    }
+  }
+}

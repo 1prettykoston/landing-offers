@@ -1,0 +1,234 @@
+.rewards {
+  background: center / cover no-repeat url('./../img/rewards/bg-rewards.png');
+  max-width: unset;
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 5%;
+    row-gap: 5rem;
+    grid-template-rows: repeat(3, 0.5fr);
+    padding: 15rem 0;
+
+    @media screen and (max-width: 1200px) {
+      row-gap: 2rem;
+      padding: 10rem 0;
+    }
+
+    @media screen and (max-width: 900px) {
+      grid-template-rows: unset;
+      grid-template-columns: repeat(1fr);
+      padding: 5rem 0;
+    }
+  }
+
+  &__scheme,
+  &__benefits {
+    border-radius: 2rem;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(1rem);
+  }
+
+  &__scheme {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    position: relative;
+    grid-row: 1 / 2;
+    grid-column: 2 / -1;
+    border: 0.1rem solid #f3a712;
+
+    @media screen and (max-width: 900px) {
+      grid-row: 3 /4;
+      grid-column: 1 / -1;
+    }
+
+    @media screen and (max-width: 680px) {
+      flex-direction: column;
+      padding-right: 0;
+    }
+  }
+
+  h1 {
+    flex: 0 1 45rem;
+    margin-right: auto;
+    margin-bottom: 0;
+    font-size: 3rem;
+
+    @media screen and (max-width: 1200px) {
+      font-size: 2.2rem;
+    }
+
+    @media screen and (max-width: 680px) {
+      font-size: 3.4rem;
+
+    }
+
+
+
+    @media screen and (max-width: 900px) {
+      grid-column: 1 / -1;
+      grid-row: 1 / 2;
+    }
+
+    span {
+      display: block;
+
+      &:first-of-type {
+        margin-bottom: 1rem;
+        color: #fff;
+      }
+
+      &:nth-of-type(2) {
+        font-weight: 500;
+        text-transform: none;
+      }
+    }
+  }
+
+  &__step {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    img,
+    picture {
+      max-width: 12rem;
+
+      @media screen and (max-width: 740px) {
+        max-width: 9rem;
+      }
+    }
+
+    p {
+      @media screen and (max-width: 1200px) {
+        font-size: 1.4rem;
+      }
+
+      @media screen and (max-width: 680px) {
+        font-size: 1.6rem;
+      }
+    }
+  }
+
+  &__benefits {
+    grid-row: 2 / -1;
+    grid-column: 2 / -1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+    border: 0.1rem solid #fff;
+
+    @media screen and (max-width: 1200px) {
+      gap: 1rem;
+      padding: 2rem;
+    }
+
+    @media screen and (max-width: 900px) {
+      grid-row: 4 / 5;
+      grid-column: 1 / -1;
+    }
+
+    @media screen and (max-width: 520px) {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+  }
+
+  &__stats {
+    grid-row: 2 / -1;
+    grid-column: 1 / 2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+
+    @media screen and (max-width: 1200px) {
+      font-size: 1.4rem;
+    }
+
+    @media screen and (max-width: 900px) {
+      grid-row: 2 / 3;
+      grid-column: 1 / -1;
+    }
+
+
+    @media screen and (max-width: 680px) {
+      font-size: 1.6rem;
+
+    }
+
+
+    @media screen and (max-width: 520px) {
+      gap: 2rem;
+    }
+
+    li {
+      padding-top: 1rem;
+      border-top: 0.3rem solid #f3a712;
+    }
+    span {
+      display: block;
+      color: #f3a712;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+
+.benefit {
+  display: grid;
+  grid-template-columns: 9rem 1fr;
+  grid-template-rows: repeat(2, min-content);
+  column-gap: 1rem;
+  line-height: 1.6;
+  align-content: center;
+
+  @media screen and (max-width: 1200px) {
+    line-height: 1.2;
+    column-gap: 0.5rem;
+  }
+
+  @media screen and (max-width: 740px) {
+    grid-template-columns: 6rem 1fr;
+  }
+
+  @media screen and (max-width: 520px) {
+    grid-template-columns: 9rem 1fr;
+    column-gap: 1.5rem;
+  }
+
+  &__icon {
+    grid-row: 1 / -1;
+  }
+
+  &__title {
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-top: 1rem;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+
+    @media screen and (max-width: 1200px) {
+      margin-top: 0;
+    }
+
+    @media screen and (max-width: 740px) {
+      font-size: 1.4rem;
+    }
+
+    @media screen and (max-width: 520px) {
+      margin: 1rem 0;
+      font-size: 2rem;
+    }
+  }
+
+  &__desc {
+    font-size: 1.2rem;
+    grid-column: 2 / 3;
+
+    @media screen and (max-width: 520px) {
+      font-size: 1.6rem;
+    }
+  }
+}

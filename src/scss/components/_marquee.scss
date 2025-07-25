@@ -1,0 +1,67 @@
+.marquee {
+  position: relative;
+  max-width: 100vw;
+  overflow-x: hidden;
+  height: 4rem;
+  background-color: #f3a712;
+  color: #180d03;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  z-index: 40;
+  overflow: hidden;
+}
+
+.marquee__track {
+  position: absolute;
+  white-space: nowrap;
+  will-change: transform;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  animation: marquee 9s linear infinite;
+}
+
+.marquee__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 4rem;
+}
+
+.marquee__content div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 0.5rem;
+
+  img {
+    max-width: 2.4rem;
+  }
+}
+
+.marquee__content div span {
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(-30.8%);
+  }
+
+  to {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}

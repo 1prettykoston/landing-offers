@@ -1,0 +1,23 @@
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+
+@import 'base/base';
+@import 'base/reset';
+@import 'base/typography';
+
+@import 'components/logo';
+@import 'components/nav';
+@import 'components/marquee';
+@import 'components/btn';
+
+@import 'layouts/header';
+@import 'layouts/terms';
+@import 'layouts/hero';
+@import 'layouts/promotions';
+@import 'layouts/games';
+@import './../../node_modules/swiper/swiper.scss';
+@import 'layouts/rewards';
+@import 'layouts/casino';
+@import 'layouts/payments';
+@import 'layouts/reviews';
+@import 'layouts/footer';

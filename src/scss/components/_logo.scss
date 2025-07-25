@@ -1,0 +1,19 @@
+.logo {
+  font-weight: 700;
+  font-size: 5rem;
+  white-space: nowrap;
+
+  span:first-of-type {
+    color: #f3a712;
+  }
+
+  span:nth-of-type(2) {
+    color: #ed0900;
+  }
+
+
+  @media screen and (max-width: 680px) {
+  font-size: 4rem;
+    
+  }
+}

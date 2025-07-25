@@ -1,0 +1,81 @@
+.casino {
+  &__desc {
+    margin-right: 2rem;
+
+    @media screen and (max-width: 1200px) {
+      grid-column: 1 / -1;
+    }
+
+    @media screen and (max-width: 680px) {
+      grid-column: 1 / -1;
+      grid-row: 1 / 2;
+    }
+
+    span:first-of-type {
+      color: #f3a712;
+      font-size: 4rem;
+      font-weight: 500;
+      display: block;
+      margin-bottom: 0.5rem;
+
+      @media screen and (max-width: 1200px) {
+        margin-bottom: 0;
+      }
+
+      @media screen and (max-width: 680px) {
+        margin-bottom: 1rem;
+      }
+    }
+
+    h1 {
+      color: #fff;
+      text-transform: none;
+      line-height: 1.3;
+      margin-bottom: 3rem;
+
+      @media screen and (max-width: 680px) {
+        margin-bottom: 1rem;
+      }
+    }
+
+    p {
+      color: rgba(255, 255, 255, 0.8);
+      line-height: 1.6;
+
+      @media screen and (max-width: 680px) {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  &__gallery {
+    display: grid;
+    grid-template-columns: 1.7fr 1fr 1fr 1fr;
+    gap: 2rem;
+
+    @media screen and (max-width: 1200px) {
+      grid-template-columns: repeat(3, 1fr);
+      align-content: stretch;
+      justify-items: stretch;
+    }
+
+    @media screen and (max-width: 520px) {
+      grid-template-columns: 1fr;
+      row-gap: 1rem;
+    }
+
+    &-img {
+      align-self: end;
+      padding-bottom: 3rem;
+
+      @media screen and (max-width: 1200px) {
+        padding-bottom: 0;
+        img,
+        picture {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
